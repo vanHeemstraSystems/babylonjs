@@ -14,8 +14,14 @@ $ npm run dev -- --open
 3. The **Scene**: the 3D space where the engine renders the 3D objects.
 4. The **Camera**: the role of the camera is to display a certain space within a scene.
 
+The first thing we'll do is to create the Canvas element, as follows:
 
-
+```
+...
+  <canvas id="renderCanvas"></canvas>
+...
+```
+containers/app/babylonjs/src/+page.svelte
 
 
 
