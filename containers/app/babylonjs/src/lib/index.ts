@@ -19,8 +19,14 @@ if (browser) {
                     BABYLON.Color3.Green()
                 ]
             };
-            const box = BABYLON.MeshBuilder.CreateBox("box", options, scene); // scene is optional and defaults to the current scene
+            // const box = BABYLON.MeshBuilder.CreateBox("box", options, scene); // scene is optional and defaults to the current scene
             // const sphere = BABYLON.MeshBuilder.CreateSphere("sphere", options, scene);
+            const groundOptions = {
+                height: 10,
+                width: 10,
+                subdivisions: 30
+            }
+            const ground = BABYLON.MeshBuilder.CreateGround("ground", groundOptions);
             return scene;
         }
         const scene = createScene();

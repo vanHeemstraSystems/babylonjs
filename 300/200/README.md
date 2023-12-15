@@ -235,8 +235,19 @@ containers/app/babylonjs/src/lib/index.ts
 
 We are done with the Box. 
 
-We can add the **ground**, which is defined by a width and a height. 
+We can add the **ground**, which is defined by a width and a height. And we also have the number of subdivisions, which is pretty much the same as the segments property of the sphere.
 
+```
+...
+  const groundOptions = {
+    height: 10,
+    width: 10,
+    subdivisions: 30
+  }
+  const ground = BABYLON.MeshBuilder.CreateGround("ground", groundOptions);
+...
+```
+containers/app/babylonjs/src/lib/index.ts
 
 
 
