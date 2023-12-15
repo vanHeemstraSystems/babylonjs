@@ -249,6 +249,19 @@ We can add the **ground**, which is defined by a width and a height. And we also
 ```
 containers/app/babylonjs/src/lib/index.ts
 
+However as you can see here we can't notice the effect of this property even though it is there. So to see how this property affects the ground let me just add a couple lines and I'll get back to them later on.
+
+```
+...
+  ground.material = BABYLON.StandardMaterial("material");
+  ground.material.wireframe = true;
+...
+```
+containers/app/babylonjs/src/lib/index.ts
+
+This is our ground represented only by its subdivisions. Now let's reduce the number and see what we are going to get. That done we can change the number of subdivisions horizontally and vertically.
+
+MORE ...
 
 
 12:31 Adding 3D text

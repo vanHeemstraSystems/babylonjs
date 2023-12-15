@@ -27,6 +27,8 @@ if (browser) {
                 subdivisions: 30
             }
             const ground = BABYLON.MeshBuilder.CreateGround("ground", groundOptions);
+            ground.material = new BABYLON.StandardMaterial("material");
+            ground.material.wireframe = true;
             return scene;
         }
         const scene = createScene();
