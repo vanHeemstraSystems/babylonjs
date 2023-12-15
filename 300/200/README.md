@@ -7,7 +7,7 @@ $ cd containers/app/babylonjs
 $ npm run dev -- --open
 ```
 
-## 100 -  The 4 essential elements of a Babylon.js app
+## 100 - The 4 essential elements of a Babylon.js app
 
 1. The **Canvas**: it is an HTML container in which you show your creations on a page. 
 2. The **Engine**: the brain of your BabylonJS App, which transforms the logic you type into living pieces of 3D graphics.
@@ -95,7 +95,6 @@ html, body {
 ```
 containers/app/babylonjs/src/static/style.css
 
-
 ```
 ...
 <link rel="stylesheet" type="text/css" href="%sveltekit.assets%/style.css">
@@ -116,12 +115,31 @@ containers/app/babylonjs/src/app.html
 ```
 containers/app/babylonjs/src/routes/+page.svelte
 
-You should now see a dark rectangle on your home page, representing the canvas.
+You should now see a dark rectangle on your home page, representing the canvas, covering your whole page.
+
+Let's fix the issue with not having a camera for now:
+
+```
+...
+  scene.createDefaultCameraOrLight(true, false, true); 
+  const options = {};
+  const box = BABYLON.MeshBuilder.CreateBox("box", options, scene); // scene is optional and defaults to the current scene
+...
+```
+containers/app/babylonjs/src/routes/+page.svelte
+
+If you look in your server's page again, and zoom out with your mouse (by clicking in the canvas and scrolling backwards), you'll see that a box has been added to the scene. You can spin it around too...
+
+However, a problem is that when we resize the window, the box is not proportionally scaled. We'll fix this in next section.
+
+## 200 - Making the canvas responsive
 
 
 
 
-05:16 Making the canvas responsive
+
+
+
 06:02 Creating Meshes
 12:31 Adding 3D text
 14:16 Cameras
