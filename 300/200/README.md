@@ -177,6 +177,17 @@ Another property we can change is the **diameter** of the sphere. We can also ch
 }
 ```
 
+Back to the **box**. 
+
+
+```
+...
+  const options = {};
+  const box = BABYLON.MeshBuilder.CreateBox("box", options);
+...
+```
+containers/app/babylonjs/src/lib/index.ts
+
 
 
 
