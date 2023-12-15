@@ -6,7 +6,14 @@ if (browser) {
     const canvas = document.getElementById('renderCanvas');
     if (canvas !== null) {
         const engine = new BABYLON.Engine(canvas);
-    }
+        const createScene = function () {
+            const scene = new BABYLON.Scene(engine);
+            return scene;
+        }
+        const scene = createScene();
+        engine.runRenderLoop(function () {
 
+        });
+    }
     console.log("Hello from lib index!");
 }

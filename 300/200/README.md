@@ -56,6 +56,30 @@ Next we're going to create an instance of the Babylon engine class and pass the 
 containers/app/babylonjs/src/lib/index.ts
 
 
+Continue by creating a function that will create a scene, like so:
+
+```
+...
+    const createScene = function(){
+        const scene = new BABYLON.Scene(engine);
+        return scene;
+    }
+...
+```
+containers/app/babylonjs/src/lib/index.ts
+
+Next we're going to assign the return scene to a variable which we'll need in this run render Loop callback function:
+
+```
+...
+    const scene = createScene();
+    engine.runRenderLoop(function() {
+        
+    });
+...
+```
+containers/app/babylonjs/src/lib/index.ts
+
 
 
 
