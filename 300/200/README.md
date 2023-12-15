@@ -261,7 +261,7 @@ containers/app/babylonjs/src/lib/index.ts
 
 This is our ground represented only by its subdivisions. Now let's reduce the number and see what we are going to get. That done we can change the number of subdivisions horizontally and vertically.
 
-MORE ...
+MORE ... WE ARE AT https://youtu.be/e6EkrLr8g_o?t=606
 
 
 12:31 Adding 3D text
