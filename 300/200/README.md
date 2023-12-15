@@ -147,10 +147,21 @@ containers/app/babylonjs/src/lib/index.ts
 
 If you check again in your server the content of the canvas will scale proportionally to the (resizing of) the browser window. **NOTE**: You may have to click the inside canvas, and zoom out with your mouse before you see the box in the center of the canvas.
 
+## 300 - Creating Meshes
+
+An object that figure inside the scene is often referred to as a **mesh**. It could be a box, a sphere, a complex shape like a Taurus knot or even more complex like a model created using 3D modeling software like blender. The good thing is that Babylon GS provides a big set of built-in meshes that we can introduce to our scene. So let's see how we can do that.
+
+```
+...
+  // const box = BABYLON.MeshBuilder.CreateBox("box", options, scene);
+  const sphere = BABYLON.MeshBuilder.CreateSphere("sphere", options, scene);
+...
+```
+containers/app/babylonjs/src/lib/index.ts
 
 
 
-06:02 Creating Meshes
+
 12:31 Adding 3D text
 14:16 Cameras
 19:05 Materials & Colors
