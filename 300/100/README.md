@@ -185,7 +185,3 @@ Then install Babylon.js as follows:
 ```
 $ npm install -D @babylonjs/core
 ```
-
-
-
-MORE ... 
