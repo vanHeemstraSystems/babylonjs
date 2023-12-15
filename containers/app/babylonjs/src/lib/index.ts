@@ -15,5 +15,4 @@ if (browser) {
           scene.render();
         });
     }
-    console.log("Hello from lib index!");
 }

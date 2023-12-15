@@ -37,8 +37,6 @@ import { browser } from '$app/environment';
 
 if (browser) {
     const canvas = document.getElementById('renderCanvas');
-
-    console.log("Hello from lib index!");
 }
 ...
 ```
@@ -87,15 +85,27 @@ containers/app/babylonjs/src/lib/index.ts
 Before we add a camera, let us first allow for the canvas to take all the space on the page, as follows:
 
 ```
-...
-<style>
-  html, body {
+html, body {
     overflow: hidden;
     width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
-  }
+}
+```
+containers/app/babylonjs/src/static/style.css
+
+
+```
+...
+<link rel="stylesheet" type="text/css" href="%sveltekit.assets%/style.css">
+...
+```
+containers/app/babylonjs/src/app.html
+
+```
+...
+<style>
   #renderCanvas {
     width: 100%;
     height: 100%;
