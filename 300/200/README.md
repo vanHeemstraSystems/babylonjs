@@ -167,8 +167,15 @@ We can alter some of the properties of our sphere like the **number of segments*
 
 Reducing the value of that property resulted in a loss of quality of the sphere and that's because meshes are actually composed of a set of triangles made out of segments and points also known as vertices. The more lines we have the more triangles we get hence we have more details that define the surface of the mesh. Having said that if we increase the number of segments (for example from 5 to 50) you can see that the sphere now looks smooth.
 
-Another property we can change is the **diameter** of the sphere.
+Another property we can change is the **diameter** of the sphere. We can also change the diameter based on a certain axis (for example the Y-axis):
 
+```
+{ 
+  segments: 50,
+  diameter: 0.3,
+  diameterY: 0.4
+}
+```
 
 
 
