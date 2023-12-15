@@ -187,7 +187,7 @@ Back to the **box**. So here again we can set a name in an object with a set of 
 ```
 containers/app/babylonjs/src/lib/index.ts
 
-So in this options object we can set the size of the box we can also change each component of the size individually using the width height and depth properties we can change the color of the Box faces so face colors here is an array of six elements every element is the color representation of one of the Cube's faces.
+So in this options object we can set the size of the box we can also change each component of the size individually using the width height and depth properties.
 
 ```
 ...
@@ -201,6 +201,41 @@ So in this options object we can set the size of the box we can also change each
 ```
 containers/app/babylonjs/src/lib/index.ts
 
+We can change the color of the Box faces so face colors here is an array of six elements every element is the color representation of one of the Cube's faces. A color is made by using an instance of the ```Color3``` or ```Color4``` classes. The difference here resides in the opacity, which can be set by the fourth argument of the color. For instance the first three arguments represent the red, green, and blue channels of the color.
+
+```
+...
+  const options = {
+    ...
+    faceColors: [
+      new BABYLON.Color4(1, 0, 0, 1) // sets the first face to the color "red" with full opacity, i.e., non-transparency
+    ],
+    ...
+  };
+...
+```
+containers/app/babylonjs/src/lib/index.ts
+
+Another way of making a color is to simply use the name of the color (e.g., Green).
+
+
+```
+...
+  const options = {
+    ...
+    faceColors: [
+      new BABYLON.Color4(1, 0, 0, 1),
+      BABYLON.Color3.Green()
+    ],
+    ...
+  };
+...
+```
+containers/app/babylonjs/src/lib/index.ts
+
+We are done with the Box. 
+
+We can add the **ground**, which is defined by a width and a height. 
 
 
 

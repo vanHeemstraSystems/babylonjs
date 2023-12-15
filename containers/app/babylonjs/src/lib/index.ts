@@ -13,7 +13,11 @@ if (browser) {
                 size: 0.1,
                 width: 2,
                 height: 0.05,
-                depth: 0.5
+                depth: 0.5,
+                faceColors: [
+                    new BABYLON.Color4(1, 0, 0, 1), // sets the first face (i.e., width) to the color "red" with full opacity, i.e., non-transparency
+                    BABYLON.Color3.Green()
+                ]
             };
             const box = BABYLON.MeshBuilder.CreateBox("box", options, scene); // scene is optional and defaults to the current scene
             // const sphere = BABYLON.MeshBuilder.CreateSphere("sphere", options, scene);
