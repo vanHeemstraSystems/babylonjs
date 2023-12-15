@@ -10,7 +10,10 @@ if (browser) {
             const scene = new BABYLON.Scene(engine);
             scene.createDefaultCameraOrLight(true, false, true);
             const options = {
-                size: 0.1
+                size: 0.1,
+                width: 2,
+                height: 0.05,
+                depth: 0.5
             };
             const box = BABYLON.MeshBuilder.CreateBox("box", options, scene); // scene is optional and defaults to the current scene
             // const sphere = BABYLON.MeshBuilder.CreateSphere("sphere", options, scene);

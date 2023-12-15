@@ -192,7 +192,10 @@ So in this options object we can set the size of the box we can also change each
 ```
 ...
   const options = {
-    size: 0.1
+    size: 0.1,
+    width: 2,
+    height: 0.05,
+    depth: 0.5
   };
 ...
 ```
