@@ -14,14 +14,34 @@ $ npm run dev -- --open
 3. The **Scene**: the 3D space where the engine renders the 3D objects.
 4. The **Camera**: the role of the camera is to display a certain space within a scene.
 
+
+We add a reference to the library in our main page, like so:
+
+```
+...
+<script>
+  import { } from "$lib/index.ts";
+</script>
+...
+```
+containers/app/babylonjs/src/+page.svelte
+
 The first thing we'll do is to create the Canvas element, as follows:
 
 ```
 ...
-  <canvas id="renderCanvas"></canvas>
+// place files you want to import through the `$lib` alias in this folder.
+import * as BABYLON from '@babylonjs/core';
+import { browser } from '$app/environment';
+
+if (browser) {
+    const canvas = document.getElementById('renderCanvas');
+
+    console.log("Hello from lib index!");
+}
 ...
 ```
-containers/app/babylonjs/src/+page.svelte
+containers/app/babylonjs/src/lib/index.ts
 
 
 
