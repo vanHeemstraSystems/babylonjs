@@ -159,6 +159,17 @@ An object that figure inside the scene is often referred to as a **mesh**. It co
 ```
 containers/app/babylonjs/src/lib/index.ts
 
+Note the ```options``` argument.  
+
+We can alter some of the properties of our sphere like the **number of segments**. 
+
+```{ segments: 5 }```
+
+Reducing the value of that property resulted in a loss of quality of the sphere and that's because meshes are actually composed of a set of triangles made out of segments and points also known as vertices. The more lines we have the more triangles we get hence we have more details that define the surface of the mesh. Having said that if we increase the number of segments (for example from 5 to 50) you can see that the sphere now looks smooth.
+
+Another property we can change is the **diameter** of the sphere.
+
+
 
 
 
