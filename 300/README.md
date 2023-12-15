@@ -150,6 +150,36 @@ $ npm install
 
 Commit your first changes to Git.
 
+Start the server as follows:
+
+```
+$ npm run dev -- --open
+```
+
+It prompts:
+
+```
+
+> babylonjs@0.0.1 dev
+> vite dev --open
+
+
+Forced re-optimization of dependencies
+
+  VITE v5.0.9  ready in 948 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+  ➜  press h + enter to show help
+```
+
+A new browser window will be opened showing the welcome page of SvelteKit:
+
+```
+Welcome to SvelteKit
+Visit kit.svelte.dev to read the documentation
+```
+
 
 
 MORE ... 
