@@ -1,11 +1,24 @@
 # 200 - Modify the BabylonJS application
 
-01:09 Setting up
+Run the server again:
+
+```
+$ cd containers/app/babylonjs
+$ npm run dev -- --open
+```
+
+## 100 -  The 4 essential elements of a Babylon.js app
+
+1. The **Canvas**: it is an HTML container in which you show your creations on a page. 
+2. The **Engine**: the brain of your BabylonJS App, which transforms the logic you type into living pieces of 3D graphics.
+3. The **Scene**: the 3D space where the engine renders the 3D objects.
+4. The **Camera**: the role of the camera is to display a certain space within a scene.
 
 
 
 
-02:53 The 4 essential elements of a Babylon.js app
+
+
 
 
 
