@@ -4,6 +4,9 @@ import { browser } from '$app/environment';
 
 if (browser) {
     const canvas = document.getElementById('renderCanvas');
+    if (canvas !== null) {
+        const engine = new BABYLON.Engine(canvas);
+    }
 
     console.log("Hello from lib index!");
 }

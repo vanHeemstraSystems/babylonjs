@@ -44,6 +44,16 @@ if (browser) {
 ```
 containers/app/babylonjs/src/lib/index.ts
 
+Next we're going to create an instance of the Babylon engine class and pass the canvas to the Constructor method so this way we are telling the engine to render the scene in this canvas element.
+
+```
+...
+    if (canvas !== null) {
+        const engine = new BABYLON.Engine(canvas);
+    }
+...
+```
+containers/app/babylonjs/src/lib/index.ts
 
 
 
