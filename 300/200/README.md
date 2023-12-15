@@ -134,8 +134,18 @@ However, a problem is that when we resize the window, the box is not proportiona
 
 ## 200 - Making the canvas responsive
 
+In order for any assets on the scene to scale proportionally with the canvas, add the following:
 
+```
+...
+  window.addEventListener('resize', function() {
+    engine.resize();
+  });
+...
+```
+containers/app/babylonjs/src/lib/index.ts
 
+If you check again in your server the content of the canvas will scale proportionally to the (resizing of) the browser window. **NOTE**: You may have to click the inside canvas, and zoom out with your mouse before you see the box in the center of the canvas.
 
 
 

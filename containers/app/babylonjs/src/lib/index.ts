@@ -15,7 +15,10 @@ if (browser) {
         }
         const scene = createScene();
         engine.runRenderLoop(function () {
-          scene.render();
+            scene.render();
+        });
+        window.addEventListener('resize', function () {
+            engine.resize();
         });
     }
 }
