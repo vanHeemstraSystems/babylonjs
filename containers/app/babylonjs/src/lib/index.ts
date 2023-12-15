@@ -12,7 +12,7 @@ if (browser) {
         }
         const scene = createScene();
         engine.runRenderLoop(function () {
-
+          scene.render();
         });
     }
     console.log("Hello from lib index!");

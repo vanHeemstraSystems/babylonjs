@@ -68,18 +68,45 @@ Continue by creating a function that will create a scene, like so:
 ```
 containers/app/babylonjs/src/lib/index.ts
 
-Next we're going to assign the return scene to a variable which we'll need in this run render Loop callback function:
+Next we're going to assign the returned scene to a variable which we'll need in this run render Loop callback function:
 
 ```
 ...
     const scene = createScene();
     engine.runRenderLoop(function() {
-        
+      scene.render();
     });
 ...
 ```
 containers/app/babylonjs/src/lib/index.ts
 
+**WARNING**: You may be warned as follows:
+
+```Uncaught Error: No camera defined```
+
+Before we add a camera, let us first allow for the canvas to take all the space on the page, as follows:
+
+```
+...
+<style>
+  html, body {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  #renderCanvas {
+    width: 100%;
+    height: 100%;
+    touch-action: none;
+  }  
+</style>
+...
+```
+containers/app/babylonjs/src/routes/+page.svelte
+
+You should now see a dark rectangle on your home page, representing the canvas.
 
 
 
