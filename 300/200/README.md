@@ -177,8 +177,7 @@ Another property we can change is the **diameter** of the sphere. We can also ch
 }
 ```
 
-Back to the **box**. 
-
+Back to the **box**. So here again we can set a name in an object with a set of properties and by the way we can skip the scene here, because when you have only one scene the presence or absence of the third argument doesn't change anything.
 
 ```
 ...
@@ -187,6 +186,18 @@ Back to the **box**.
 ...
 ```
 containers/app/babylonjs/src/lib/index.ts
+
+So in this options object we can set the size of the box we can also change each component of the size individually using the width height and depth properties we can change the color of the Box faces so face colors here is an array of six elements every element is the color representation of one of the Cube's faces.
+
+```
+...
+  const options = {
+    size: 0.1
+  };
+...
+```
+containers/app/babylonjs/src/lib/index.ts
+
 
 
 
