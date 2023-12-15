@@ -180,6 +180,14 @@ Welcome to SvelteKit
 Visit kit.svelte.dev to read the documentation
 ```
 
+Stop the server by entering CTRL + C.
+
+Then install Babylon.js as follows:
+
+```
+$ npm install -D @babylonjs/core
+```
+
 
 
 MORE ... 
