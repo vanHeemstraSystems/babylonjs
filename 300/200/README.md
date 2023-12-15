@@ -14,8 +14,7 @@ $ npm run dev -- --open
 3. The **Scene**: the 3D space where the engine renders the 3D objects.
 4. The **Camera**: the role of the camera is to display a certain space within a scene.
 
-
-We add a reference to the library in our main page, like so:
+We add a reference to the library in our main page, and create the Canvas element like so:
 
 ```
 ...
@@ -23,10 +22,12 @@ We add a reference to the library in our main page, like so:
   import { } from "$lib/index.ts";
 </script>
 ...
+<canvas id="renderCanvas"></canvas>
+...
 ```
 containers/app/babylonjs/src/+page.svelte
 
-The first thing we'll do is to create the Canvas element, as follows:
+Continue with adding logic inside of the library as follows:
 
 ```
 ...
