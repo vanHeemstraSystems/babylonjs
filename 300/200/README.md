@@ -263,17 +263,54 @@ This is our ground represented only by its subdivisions. Now let's reduce the nu
 
 MORE ... WE ARE AT https://youtu.be/e6EkrLr8g_o?t=606
 
+## 400 - Adding 3D text
 
-12:31 Adding 3D text
-14:16 Cameras
-19:05 Materials & Colors
-22:54 Textures
-27:03 Geometric transformations
-28:18 Gizmos
-30:40 Animation
-34:53 Lights
-38:39 Shadows
-40:27 Fog
-41:54 Picking objects (Raycast)
-43:09 Importing models
-46:11 Sound
+Skipped for now due to time constraints.
+
+## 500 - Cameras
+
+Skipped for now due to time constraints.
+
+## 600 - Materials & Colors
+
+Skipped for now due to time constraints.
+
+## 700 - Textures
+
+Skipped for now due to time constraints.
+
+## 800 - Geometric transformations
+
+Skipped for now due to time constraints.
+
+## 900 - Gizmos
+
+Skipped for now due to time constraints.
+
+## 1000 - Animation
+
+Skipped for now due to time constraints.
+
+## 1100 - Lights
+
+Skipped for now due to time constraints.
+
+## 1200 - Shadows
+
+Skipped for now due to time constraints.
+
+## 1300 - Fog
+
+Skipped for now due to time constraints.
+
+## 1400 - Picking objects (Raycast)
+
+Skipped for now due to time constraints.
+
+## 1500 - Importing models
+
+
+
+## 1600 - Sound
+
+Skipped for now due to time constraints.
