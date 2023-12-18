@@ -33,7 +33,7 @@ if (browser) {
             BABYLON.SceneLoader.ImportMesh(
                 '',
                 '/models/',
-                'lego-azure.gltf',
+                'lego_baseplate_48x48_4186_dark_grey.gltf',
                 scene
             );
             return scene;

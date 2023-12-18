@@ -345,7 +345,7 @@ And the fourth is the ```scene```.
 BABYLON.SceneLoader.Importmesh(
   '',
   '/models/',
-  'lego-azure.gltf',
+  'lego_baseplate_48x48_4186_dark_grey.gltf',
   scene
 );
 ...
