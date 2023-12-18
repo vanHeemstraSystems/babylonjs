@@ -330,8 +330,27 @@ import '@babylonjs/loaders/glTF';
 ```
 containers/app/babylonjs/src/lib/index.ts
 
-Next, I'm going to call the import mesh method and pass 4 arguments the first argument here is the specific mesh to load from the model so since we want to display the entire model we have to set this to an empty string or null the second one is the root URL the third argument is the file name and the fourth is the scene
+Next, I'm going to call the import mesh method and pass 4 arguments. 
 
+The first argument here is the specific mesh to load from the model. So since we want to display the entire model we have to set this to an empty string (```''```) or null.
+
+The second one is the root URL (here: ```'/models/'```).
+
+The third argument is the file name.
+
+And the fourth is the ```scene```.
+
+```
+...
+BABYLON.SceneLoader.Importmesh(
+  '',
+  '/models/',
+  'lego-azure.gltf',
+  scene
+);
+...
+```
+containers/app/babylonjs/src/lib/index.ts
 
 MORE ...
 

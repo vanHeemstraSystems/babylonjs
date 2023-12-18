@@ -30,6 +30,12 @@ if (browser) {
             const ground = BABYLON.MeshBuilder.CreateGround("ground", groundOptions);
             ground.material = new BABYLON.StandardMaterial("material");
             ground.material.wireframe = true;
+            BABYLON.SceneLoader.ImportMesh(
+                '',
+                '/models/',
+                'lego-azure.gltf',
+                scene
+            );
             return scene;
         }
         const scene = createScene();
