@@ -352,6 +352,16 @@ BABYLON.SceneLoader.Importmesh(
 ```
 containers/app/babylonjs/src/lib/index.ts
 
+**NOTE**: Make sure you have the glTF file in the ```/containers/app/babylonjs/static/models/``` folder.
+
+If you run the server now, the model should be visible:
+
+```
+$ npm run dev -- --open
+```
+
+
+
 MORE ...
 
 ## 1600 - Sound
