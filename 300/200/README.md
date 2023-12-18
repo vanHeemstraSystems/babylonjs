@@ -311,6 +311,10 @@ Skipped for now due to time constraints. See https://www.youtube.com/watch?v=e6E
 
 See also https://www.youtube.com/watch?v=e6EkrLr8g_o&t=2589s
 
+Now time to add some models. There are different file extensions that Babylon GS is capable of loading. The default one is ```.babylon``` and we don't need to add a plugin to load modules from these type of files, but it's not the case when it comes to the rest of the file extensions like ```.obj``` and ```.glb```.
+
+
+
 
 
 ## 1600 - Sound
