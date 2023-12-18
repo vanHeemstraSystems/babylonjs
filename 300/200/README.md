@@ -321,6 +321,18 @@ Then type:
 $ npm install -D @babylonjs/loaders
 ```
 
+That done now I need to import the module I've just installed:
+
+```
+...
+import '@babylonjs/loaders/glTF';
+...
+```
+containers/app/babylonjs/src/lib/index.ts
+
+Next, I'm going to call the import mesh method and pass 4 arguments the first argument here is the specific mesh to load from the model so since we want to display the entire model we have to set this to an empty string or null the second one is the root URL the third argument is the file name and the fourth is the scene
+
+
 MORE ...
 
 ## 1600 - Sound
