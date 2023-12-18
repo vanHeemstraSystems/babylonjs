@@ -313,9 +313,15 @@ See also https://www.youtube.com/watch?v=e6EkrLr8g_o&t=2589s
 
 Now time to add some models. There are different file extensions that Babylon GS is capable of loading. The default one is ```.babylon``` and we don't need to add a plugin to load modules from these type of files, but it's not the case when it comes to the rest of the file extensions like ```.obj``` and ```.glb```.
 
+So since I want to load a ```.gltf``` file which is the most common file types to work with on the web and have to install the additional set of loaders. To do that I'm going to stop the server for a second.
 
+Then type:
 
+```
+$ npm install -D @babylonjs/loaders
+```
 
+MORE ...
 
 ## 1600 - Sound
 
