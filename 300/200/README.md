@@ -265,52 +265,54 @@ MORE ... WE ARE AT https://youtu.be/e6EkrLr8g_o?t=606
 
 ## 400 - Adding 3D text
 
-Skipped for now due to time constraints.
+Skipped for now due to time constraints. See https://www.youtube.com/watch?v=e6EkrLr8g_o&t=751s
 
 ## 500 - Cameras
 
-Skipped for now due to time constraints.
+Skipped for now due to time constraints. See https://www.youtube.com/watch?v=e6EkrLr8g_o&t=856s
 
 ## 600 - Materials & Colors
 
-Skipped for now due to time constraints.
+Skipped for now due to time constraints. See https://www.youtube.com/watch?v=e6EkrLr8g_o&t=1145s
 
 ## 700 - Textures
 
-Skipped for now due to time constraints.
+Skipped for now due to time constraints. See https://www.youtube.com/watch?v=e6EkrLr8g_o&t=1374s
 
 ## 800 - Geometric transformations
 
-Skipped for now due to time constraints.
+Skipped for now due to time constraints. See https://www.youtube.com/watch?v=e6EkrLr8g_o&t=1623s
 
 ## 900 - Gizmos
 
-Skipped for now due to time constraints.
+Skipped for now due to time constraints. See https://www.youtube.com/watch?v=e6EkrLr8g_o&t=1698s
 
 ## 1000 - Animation
 
-Skipped for now due to time constraints.
+Skipped for now due to time constraints. See https://www.youtube.com/watch?v=e6EkrLr8g_o&t=1840s
 
 ## 1100 - Lights
 
-Skipped for now due to time constraints.
+Skipped for now due to time constraints. See https://www.youtube.com/watch?v=e6EkrLr8g_o&t=2093s
 
 ## 1200 - Shadows
 
-Skipped for now due to time constraints.
+Skipped for now due to time constraints. See https://www.youtube.com/watch?v=e6EkrLr8g_o&t=2319s
 
 ## 1300 - Fog
 
-Skipped for now due to time constraints.
+Skipped for now due to time constraints. See https://www.youtube.com/watch?v=e6EkrLr8g_o&t=2427s
 
 ## 1400 - Picking objects (Raycast)
 
-Skipped for now due to time constraints.
+Skipped for now due to time constraints. See https://www.youtube.com/watch?v=e6EkrLr8g_o&t=2514s
 
 ## 1500 - Importing models
+
+See also https://www.youtube.com/watch?v=e6EkrLr8g_o&t=2589s
 
 
 
 ## 1600 - Sound
 
-Skipped for now due to time constraints.
+Skipped for now due to time constraints. See https://www.youtube.com/watch?v=e6EkrLr8g_o&t=2771s
