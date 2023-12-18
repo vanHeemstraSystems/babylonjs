@@ -30,12 +30,20 @@ if (browser) {
             const ground = BABYLON.MeshBuilder.CreateGround("ground", groundOptions);
             ground.material = new BABYLON.StandardMaterial("material");
             ground.material.wireframe = true;
-            BABYLON.SceneLoader.ImportMesh(
+            BABYLON.SceneLoader.ImportMeshAsync(
                 '',
                 '/models/',
                 'lego_baseplate_48x48_4186_dark_grey.gltf',
                 scene
-            );
+            ).then((result) => {
+                const importedAnimGroups = result.animationGroups;
+                // Optional, do something with animations.
+            });
+            const bgMusic = new BABYLON.Sound('mySong', '/sounds/mixkit-birds-in-forest-loop-1239.wav', scene, null, {
+                loop:true,
+                autoplay: true,
+                volume: 0.10
+            });
             return scene;
         }
         const scene = createScene();

@@ -360,10 +360,78 @@ If you run the server now, the model should be visible:
 $ npm run dev -- --open
 ```
 
+Now say we want to do some stuff by the end of the loading process of the model. To do that we need to pass a callback function that takes four arguments:
 
+```
+...
+BABYLON.SceneLoader.Importmesh(
+  '',
+  '/models/',
+  'lego_baseplate_48x48_4186_dark_grey.gltf',
+  scene,
+  function(meshes, particleSystems, skeletons, animationGroups) {
+    const model = meshes[0];
+    model.scaling = new BABYLON.Vector3(1.25, 1.25, 1.25);
+    // animationGroups[5].play(true); // requires a model that contains animations
+  }
+);
+...
+```
+containers/app/babylonjs/src/lib/index.ts
 
-MORE ...
+So as you can see above, we have the model stored as the first element of the meshes array (i.e. [0]) and here we can scale it up for instance.
+
+And we can also play another animation, provided our model contains animations.
+
+Another variant of the import mesh method is ```ImportMeshAsync```. Keep in mind though that both of these methods are asynchronous.
+
+```
+...
+BABYLON.SceneLoader.ImportMeshAsync(
+  '',
+  '/models/',
+  'lego_baseplate_48x48_4186_dark_grey.gltf',
+  scene
+).then((result) => {});
+...
+```
+containers/app/babylonjs/src/lib/index.ts
+
+And again to play another animation we're going to assign the animation groups to a variable and then play the fourth one this time.
+
+```
+...
+BABYLON.SceneLoader.ImportMeshAsync(
+  '',
+  '/models/',
+  'lego_baseplate_48x48_4186_dark_grey.gltf',
+  scene
+).then((result) => {
+  const importedAnimGroups = result.animationGroups;
+  importedAnimgroups[3].play(true);
+});
+...
+```
+containers/app/babylonjs/src/lib/index.ts
+
 
 ## 1600 - Sound
 
-Skipped for now due to time constraints. See https://www.youtube.com/watch?v=e6EkrLr8g_o&t=2771s
+See https://www.youtube.com/watch?v=e6EkrLr8g_o&t=2771s
+
+Time to play some ambient music in the background. 
+
+To do so I'm going to create an instance of sound and pass the following arguments the name the location of the file the scene a callback function for when the loading process of the file is finished and an options object and here we can set the song in Loop if it starts automatically once loaded and the volume.
+
+```
+...
+const bgMusic = new BABYLON.Sound('mySong', '/sounds/mixkit-birds-in-forest-loop-1239.wav', scene, null, {
+  loop: true,
+  autoplay: true,
+  volume: 0.10
+});
+...
+```
+containers/app/babylonjs/src/lib/index.ts
+
+**NOTE**: Make sure you have the required sound file(s) stored in the ```/containers/app/babylonjs/static/sounds/``` folder.
